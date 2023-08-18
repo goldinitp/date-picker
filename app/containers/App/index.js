@@ -14,8 +14,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import { DatePicker } from '@atlaskit/datetime-picker';
 
 import GlobalStyle from '../../global-styles';
 
@@ -36,14 +35,16 @@ export default function App() {
         defaultTitle="React.js Boilerplate"
       >
         <meta name="description" content="A React.js Boilerplate application" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> */}
       </Helmet>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
-      <Footer />
+      <DatePicker />
+      {/* <Footer /> */}
       <GlobalStyle />
     </AppWrapper>
   );
