@@ -43,7 +43,40 @@ export default function App() {
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
-      <DatePicker />
+      <div style={{ width: '100%' }}>
+        <div style={{ width: '150px', float: 'right' }}>
+          <DatePicker />
+        </div>
+      </div>
+      <div style={{ width: '100%' }}>
+        <div style={{ width: '150px', float: 'left' }}>
+          <DatePicker />
+        </div>
+      </div>
+      <div style={{ width: '100%' }}>
+        <div style={{ width: '150px', float: 'center' }}>
+          <DatePicker />
+        </div>
+      </div>
+      <div style={{ width: '100%' }}>
+        <div style={{ width: '150px', float: 'left' }}>
+          <DatePicker />
+        </div>
+      </div>
+      <div style={{ width: '100%' }}>
+        <div style={{ width: '150px', float: 'right' }}>
+          <DatePicker />
+        </div>
+      </div>
+      <div style={{ width: '100%', height: '500px', backgroundColor: 'beige' }}>
+        Empty Space
+      </div>
+      <div style={{ width: '100%' }}>
+        <div style={{ width: '150px', float: 'right' }}>
+          <DatePicker />
+        </div>
+      </div>
+
       {/* <Footer /> */}
       <GlobalStyle />
     </AppWrapper>
